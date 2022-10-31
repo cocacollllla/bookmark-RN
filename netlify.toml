@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/proxy/*"
+  to = "http://www.aladin.co.kr/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
