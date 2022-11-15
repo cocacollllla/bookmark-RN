@@ -16,3 +16,6 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const storage = getStorage();
 export const auth = getAuth();
+// (async () => {
+//   await setPersistence(auth, browserLocalPersistence);
+// })();
