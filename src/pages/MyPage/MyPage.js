@@ -9,6 +9,8 @@ import { deleteStorage, userProfileUpdate } from "../../api/axios";
 import { storage } from "../../config/keys";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
+import { auth, db } from "../../config/keys";
+import { getAuth, signOut } from "firebase/auth";
 
 const MyPage = () => {
   const [loading, setLoading] = useState(false);
@@ -143,7 +145,7 @@ const MyPage = () => {
           <li onClick={() => navigate("/friendlist")}>친구 목록</li>
           <li onClick={() => navigate("/addfriend")}>친구 추가</li>
           <li>찜한 도서</li>
-          <li>로그아웃</li>
+          <li onClick={() => signOut(auth)}>로그아웃</li>
         </ul>
       </MyPageList>
     </MyPageContainer>
