@@ -34,8 +34,8 @@ const AddBookmark = () => {
 
   const navigate = useNavigate();
 
-  console.log("book", book);
-  console.log(isEditing);
+  // console.log("book", book);
+  // console.log(isEditing);
 
   useEffect(() => {
     if (isEditing) {
@@ -57,8 +57,8 @@ const AddBookmark = () => {
     }
   }, [image, mode]);
 
-  console.log(text);
-  console.log(image);
+  // console.log(text);
+  // console.log(image);
 
   const onSubmit = async () => {
     if (text === "" && image === undefined) return;
@@ -117,7 +117,7 @@ const AddBookmark = () => {
     return fileURL;
   };
 
-  console.log(modalOption);
+  // console.log(modalOption);
 
   if (loading) {
     return <Loading />;
