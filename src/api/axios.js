@@ -29,7 +29,8 @@ export const bookApi = {
     api.get("ItemLookUp.aspx", {
       params: {
         ttbkey: process.env.REACT_APP_TTB_KEY,
-        itemIdType: "ISBN13",
+        itemIdType: "ISBN",
+        cover: "MidBig",
         ItemId: isbn,
         output: "js",
         Version: 20131101,
@@ -40,7 +41,7 @@ export const bookApi = {
       params: {
         ttbkey: process.env.REACT_APP_TTB_KEY,
         Query: term,
-        QueryType: "Title",
+        QueryType: "Keyword",
         MaxResults: 10,
         start: page,
         SearchTarget: "Book",

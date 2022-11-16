@@ -46,6 +46,7 @@ const AddBookmark = () => {
 
   useEffect(() => {
     if (mode === "ocr") {
+      console.log("아니겟지");
       const base64 = image.replace("data:image/png;base64,", "");
       setLoading(true);
       const getText = async () => {

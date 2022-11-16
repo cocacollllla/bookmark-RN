@@ -47,7 +47,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage" : "https://musical-meerkat-d979f7.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
